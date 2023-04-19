@@ -32,3 +32,9 @@ $ kubectl config get-contexts
 CURRENT   NAME       CLUSTER    AUTHINFO   NAMESPACE
 *         minikube   minikube   minikube   default
 ```
+### When minikube goes wrong
+```
+$ docker system prune
+$ minikube delete
+$ minikube start --driver=docker
+```
